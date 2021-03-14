@@ -9,10 +9,11 @@ mitigation measures:
 (ii) contact tracing;
 (iii) digital contact tracing (for contacts between individuals who are assumed to have installed the app).
 
-All the parameters of the compartmental model and of the interventions can be varied at the beginning of the script. In particular, the efficiency of the manual contact tracing is here set to p_ct=0.
 
 The input file can be 
 tij_InVS15_1week.dat (one week of contact data collected in offices by the SocioPatterns collaboration, see www.sociopatterns.org/datasets, here aggregated on 15 minutes resolution: each line is of the form t i j w, meaning that at timestep t individuals i and j met for w seconds) or tij_InVS15_1week_0.25removed.dat (same with 25% of contacts removed)
+
+All the parameters of the compartmental model and of the interventions can be varied at the beginning of the script. In particular, the efficiency of the manual contact tracing is here set to p_ct=0 and the number of runs to ntrials=1000.
 
 The script 1-Spread_no_measures corresponds to an unmitigated spread.
 
